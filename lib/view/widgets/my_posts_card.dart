@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-class MyPostCards extends StatelessWidget {
+class MyPostCards extends StatefulWidget {
   final String image;
+
   const MyPostCards({Key? key,required this.image}) : super(key: key);
 
+  @override
+  State<MyPostCards> createState() => _MyPostCardsState();
+}
+
+class _MyPostCardsState extends State<MyPostCards> {
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -40,7 +46,7 @@ class MyPostCards extends StatelessWidget {
                                 borderRadius: BorderRadius.only(topLeft: Radius.circular(12.sp), topRight: Radius.circular(12.sp)),
 
 
-                                child: Image.asset('assets/images/$image', fit: BoxFit.cover,)))),
+                                child: Image.asset('assets/images/${widget.image}', fit: BoxFit.cover,)))),
 
                     Expanded(
                       child: Container(

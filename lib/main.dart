@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:github_team_practice/view/screens/bottom_navigation_screen.dart';
 import 'package:github_team_practice/view/screens/home_screen.dart';
 import 'package:github_team_practice/view/screens/login_screen.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: const LoginScreen(),
+        home: const BottomNavigaionScreen(),
 
       ),
 
