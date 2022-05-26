@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:github_team_practice/view/screens/sign_up_screen.dart';
@@ -117,26 +118,34 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 53.sp,
             ),
-            Row(
-
-              children: [
-                const Expanded(
-
-                    child:Text('Dont have an account ?',style: TextStyle(
-                       letterSpacing: 0.18
-           ),) ),
-                Expanded(
-
-                    child: TextButtonWidget(text: 'Create an Account', onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)
-                      {
-
-                        return  SignUpScreen();
-                      }
-                      ));
-                    },))
-              ],
-            )
+          RichText(
+            text:  TextSpan(text: 'Non touchable. ', children: [
+               TextSpan(
+                text: 'Tap here.',
+                recognizer: new TapGestureRecognizer()..onTap = () => print('Tap Here onTap'),
+              )
+            ]),
+          ),
+           //  Row(
+           //
+           //    children: [
+           //      const Expanded(
+           //
+           //          child:Text('Dont have an account ?',style: TextStyle(
+           //             letterSpacing: 0.18
+           // ),) ),
+           //      Expanded(
+           //
+           //          child: TextButtonWidget(text: 'Create an Account', onTap: (){
+           //            Navigator.push(context, MaterialPageRoute(builder: (context)
+           //            {
+           //
+           //              return  SignUpScreen();
+           //            }
+           //            ));
+           //          },))
+           //    ],
+           //  )
 
 
           ]),
