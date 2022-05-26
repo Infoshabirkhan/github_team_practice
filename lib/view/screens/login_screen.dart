@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
             // ),
 
             SizedBox(
-              height: 70.sp,
+              height: 50.sp,
             ),
             SizedBox(
               //   color: Colors.blue,

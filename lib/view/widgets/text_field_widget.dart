@@ -16,25 +16,25 @@ class TextFieldWidget extends StatelessWidget {
         decoration: InputDecoration(
           contentPadding: EdgeInsets.only(left: 15.sp,top: 10.sp,bottom: 10.sp),
           fillColor: Colors.grey[200],
-          filled: true,
+         // filled: true,
           hintText: text,
 
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.r),
             borderSide: const BorderSide(
-                color: Colors.transparent
+                color: Colors.black
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.r),
             borderSide: const BorderSide(
-                color: Colors.transparent
+                color: Colors.black
             ),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.r),
             borderSide: const BorderSide(
-                color: Colors.transparent
+                color: Colors.black
             ),
           ),
         ),
