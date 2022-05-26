@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:github_team_practice/view/screens/home_screen.dart';
+import 'package:github_team_practice/view/screens/sign_up_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: const HomeScreen(),
+        home: const SignUpScreen(),
 
       ),
 
