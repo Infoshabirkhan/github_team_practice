@@ -28,9 +28,13 @@ class HomeScreen extends StatelessWidget {
             ),
             Text('Create and post blogs',style: TextStyle(fontSize: 16.sp),),
 
-            MyPostCards(image: 'photograher.jpeg'),
-            MyPostCards(image: 'programer.jpg'),
-            MyPostCards(image: 'self_learnng.png'),
+            const MyPostCards(image: 'photograher.jpeg'),
+            const MyPostCards(image: 'programer.jpg'),
+            const MyPostCards(image: 'self_learnng.png'),
+            const MyPostCards(image: 'technologies.jpg'),
+            const MyPostCards(image: 'programer.jpg'),
+            const MyPostCards(image: 'peoples.jpg'),
+            const MyPostCards(image: 'historical.jpg'),
 
           ],
         ),

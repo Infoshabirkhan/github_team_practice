@@ -6,6 +6,8 @@ import 'package:github_team_practice/view/widgets/text_button_widget.dart';
 import 'package:github_team_practice/view/widgets/text_field_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'bottom_navigation_screen.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -85,7 +87,12 @@ class LoginScreen extends StatelessWidget {
               text: '*********',
             ),
             TextButtonWidget(text: 'Forgot Password ?', onTap: (){},),
-            ButtonWidget(text: 'Sign In', onTap: (){}, color: const Color(0xff0D638A), textColor: Colors.white),
+            ButtonWidget(text: 'Sign In', onTap: (){
+
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return const BottomNavigaionScreen();
+              }));
+            }, color: const Color(0xff0D638A), textColor: Colors.white),
             SizedBox(
               height: 20.sp,
             ),
@@ -117,14 +124,14 @@ class LoginScreen extends StatelessWidget {
 
                     child:Text('Dont have an account ?',style: TextStyle(
                        letterSpacing: 0.18
-                    ),) ),
+           ),) ),
                 Expanded(
 
                     child: TextButtonWidget(text: 'Create an Account', onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)
                       {
 
-                        return const SignUpScreen();
+                        return  SignUpScreen();
                       }
                       ));
                     },))
