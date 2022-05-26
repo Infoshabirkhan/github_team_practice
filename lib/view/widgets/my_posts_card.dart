@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../controller/cubit/first_check_box_cubit.dart';
 
 
 class MyPostCards extends StatefulWidget {
   final String image;
 
-  const MyPostCards({Key? key,required this.image}) : super(key: key);
+  const MyPostCards({Key? key, required this.image}) : super(key: key);
 
   @override
   State<MyPostCards> createState() => _MyPostCardsState();
 }
 
 
-
-
-
 class _MyPostCardsState extends State<MyPostCards> {
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
 
       margin: EdgeInsets.only(top: 20.sp),
       height: 200.sp,
@@ -34,7 +34,8 @@ class _MyPostCardsState extends State<MyPostCards> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12.sp),
                     boxShadow: [
-                      BoxShadow(color: Colors.black.withAlpha(100,),blurRadius: 10),
+                      BoxShadow(color: Colors.black.withAlpha(100,),
+                          blurRadius: 10),
                     ]
 
                 ),
@@ -47,10 +48,13 @@ class _MyPostCardsState extends State<MyPostCards> {
 
                             width: double.infinity,
                             child: ClipRRect(
-                                borderRadius: BorderRadius.only(topLeft: Radius.circular(12.sp), topRight: Radius.circular(12.sp)),
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(12.sp),
+                                    topRight: Radius.circular(12.sp)),
 
 
-                                child: Image.asset('assets/images/${widget.image}', fit: BoxFit.cover,)))),
+                                child: Image.asset('assets/images/${widget
+                                    .image}', fit: BoxFit.cover,)))),
 
                     Expanded(
                       child: Container(
