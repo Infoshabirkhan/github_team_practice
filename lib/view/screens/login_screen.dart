@@ -8,15 +8,29 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Padding(
+        body: SafeArea(
+          child: ListView(
 
-          padding: EdgeInsets.symmetric(horizontal: 57.sp),
-          child: ListView(children: [
-            Padding(
-              padding: EdgeInsets.only(
-                top: 100.sp, left: 43.sp, right: 43.sp,),
-              child: Image.asset('assets/images/blogimg.png',width: 193.sp,height: 101.sp,),
-            ),
+              padding: EdgeInsets.only( left: 57.sp, right: 57.sp),
+              children: [
+            // Padding(
+            //   padding: EdgeInsets.only(
+            //     top: 100.sp, left: 43.sp, right: 43.sp,),
+            //   child: ,
+            // ),
+
+
+                SizedBox(
+                  height: 100.sp,
+                ),
+                Container(
+                  color: Colors.blue,
+                  width: 193.sp,
+                  height: 101.sp,
+                  child: Image.asset('assets/images/blogimg.png'),
+
+
+                ),
             Padding(
               padding:  EdgeInsets.only(top: 68.sp),
               child: Text(

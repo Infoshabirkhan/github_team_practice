@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
 
       ),
 
-      designSize: Size(360, 812),
+      designSize: Size(414, 896),
     );
   }
 }
