@@ -20,9 +20,9 @@ class TextFieldWidget extends StatelessWidget {
           hintText: text,
 
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12.r),
+            // borderRadius: BorderRadius.circular(12.r),
             borderSide: const BorderSide(
-                color: Colors.transparent
+//                color: Colors.transparent
             ),
           ),
           focusedBorder: OutlineInputBorder(

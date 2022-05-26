@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:github_team_practice/view/controller/cubit/first_check_box_cubit.dart';
 import 'package:github_team_practice/view/screens/home_screen.dart';
 import 'package:github_team_practice/view/screens/login_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,23 +18,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       builder: (BuildContext context, Widget? child) =>
-     MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          // This is the theme of your application.
-          //
-          // Try running your application with "flutter run". You'll see the
-          // application has a blue toolbar. Then, without quitting the app, try
-          // changing the primarySwatch below to Colors.green and then invoke
-          // "hot reload" (press "r" in the console where you ran "flutter run",
-          // or simply save your changes to "hot reload" in a Flutter IDE).
-          // Notice that the counter didn't reset back to zero; the application
-          // is not restarted.
-          primarySwatch: Colors.blue,
-        ),
-        home: const LoginScreen(),
+     MultiBlocProvider(
+       providers: [
+         BlocProvider(create: (_) => FirstCheckBoxCubit(true)),
+       ],
+       child: MaterialApp(
+          title: 'Flutter Demo',
+         theme:ThemeData(
+           textTheme: GoogleFonts.montserratTextTheme(
+             Theme.of(context).textTheme,
+           ),
 
-      ),
+         ),
+          home: const LoginScreen(),
+
+        ),
+     ),
 
       designSize: Size(414, 896),
     );
