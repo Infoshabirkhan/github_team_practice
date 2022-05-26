@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 70.sp,
             ),
-            Container(
+            SizedBox(
               //   color: Colors.blue,
               width: 193.sp,
               height: 100.sp,
@@ -87,7 +87,19 @@ class LoginScreen extends StatelessWidget {
             TextButtonWidget(text: 'Forgot Password ?', onTap: (){},),
             ButtonWidget(text: 'Sign In', onTap: (){}, color: const Color(0xff0D638A), textColor: Colors.white),
             SizedBox(
-              height: 32.sp,
+              height: 20.sp,
+            ),
+            Row(
+              children: [
+                Expanded(child: Divider()),
+                Expanded(child: Center(child: Text(' OR',style: TextStyle(
+                  color: Colors.grey[300]
+                ),))),
+                Expanded(child: Divider()),
+              ],
+            ),
+            SizedBox(
+              height: 12.sp,
             ),
             ButtonWidget(text: 'Continue with google', onTap: (){}, color: Colors.transparent, textColor: const Color(
                 0xff0D638A)),
