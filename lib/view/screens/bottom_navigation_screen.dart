@@ -43,7 +43,14 @@ class _BottomNavigaionScreenState extends State<BottomNavigaionScreen> {
                         children: [
                           Expanded(
                               flex: 6,
-                              child: Icon(Icons.home, color: state == 0 ? Colors.white : Colors.white.withOpacity(0.6),)),
+                              child: Container(
+
+                                padding: EdgeInsets.all(10.sp),
+                                  decoration: BoxDecoration(
+                                    color: state == 0 ? Colors.transparent:Colors.grey.withOpacity(0.4),
+                                    shape: BoxShape.circle
+                                  ),
+                                  child: Icon(Icons.home, color: state == 0 ? Colors.white : Colors.white.withOpacity(0.6),))),
 
 
                           Expanded(child: Container(
@@ -67,7 +74,14 @@ class _BottomNavigaionScreenState extends State<BottomNavigaionScreen> {
                         children: [
                           Expanded(
                               flex: 6,
-                              child: Icon(Icons.search, color: state == 1 ? Colors.white : Colors.white.withOpacity(0.6),)),
+                              child: Container(
+
+                                  padding: EdgeInsets.all(10.sp),
+                                  decoration: BoxDecoration(
+                                      color: state == 1 ? Colors.transparent:Colors.grey.withOpacity(0.4),
+                                      shape: BoxShape.circle
+                                  ),
+                                  child: Icon(Icons.search, color: state == 1 ? Colors.white : Colors.white.withOpacity(0.6),))),
 
                           Expanded(child: Container(
                             width: 60.sp,
@@ -90,7 +104,15 @@ class _BottomNavigaionScreenState extends State<BottomNavigaionScreen> {
                         children: [
                           Expanded(
                               flex: 6,
-                              child: Icon(Icons.person, color: state == 2 ? Colors.white : Colors.white.withOpacity(0.6),)),
+                              child: Container(
+
+                                  padding: EdgeInsets.all(10.sp),
+                                  decoration: BoxDecoration(
+                                      color: state == 2 ? Colors.transparent:Colors.grey.withOpacity(0.4),
+                                      shape: BoxShape.circle
+                                  ),
+
+                                  child: Icon(Icons.person, color: state == 2 ? Colors.white : Colors.white.withOpacity(0.6),))),
                           Expanded(child: Container(
                             width: 60.sp,
 
