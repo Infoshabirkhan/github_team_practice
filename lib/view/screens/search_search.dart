@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:github_team_practice/constants/colors.dart';
 import 'package:github_team_practice/view/widgets/search_card.dart';
 
 
@@ -8,8 +9,21 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
+
     return Scaffold(
-      
+
+    floatingActionButton: Container(
+      width: 70.sp,
+      height: 70.sp,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        border: Border.all(color: AppColors.darkBlueColor, width: 4.sp),
+        color: Colors.white
+      ),
+      child: Center(child: Icon(Icons.add, color: AppColors.darkBlueColor, size: 35.sp,),),
+    ),
       body:     SafeArea(
         child: ListView(
 

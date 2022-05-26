@@ -19,6 +19,8 @@ class _BottomNavigaionScreenState extends State<BottomNavigaionScreen> {
 
   @override
   Widget build(BuildContext context) {
+
+
     return BlocProvider(
       create: (context) => BottomNavigationCubit(0),
       child: Scaffold(
