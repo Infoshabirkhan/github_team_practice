@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:github_team_practice/constants/colors.dart';
 
 
 class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
+
 
 
   @override
