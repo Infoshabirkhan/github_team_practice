@@ -107,7 +107,7 @@ class LoginScreen extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 12.sp,
+              height: 11.sp,
             ),
             ButtonWidget(text: 'Continue with google', onTap: (){}, color: Colors.transparent, textColor: const Color(
                 0xff0D638A)),
