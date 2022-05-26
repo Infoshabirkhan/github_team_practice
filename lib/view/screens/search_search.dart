@@ -19,7 +19,7 @@ class SearchScreen extends StatelessWidget {
       height: 70.sp,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        border: Border.all(color: AppColors.darkBlueColor, width: 4.sp),
+        border: Border.all(color: AppColors.darkBlueColor, width: 3.sp),
         color: Colors.white
       ),
       child: Center(child: Icon(Icons.add, color: AppColors.darkBlueColor, size: 35.sp,),),
