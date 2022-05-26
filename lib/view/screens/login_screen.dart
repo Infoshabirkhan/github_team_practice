@@ -99,11 +99,11 @@ class LoginScreen extends StatelessWidget {
             ),
             Row(
               children: [
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
                 Expanded(child: Center(child: Text(' OR',style: TextStyle(
                   color: Colors.grey[300]
                 ),))),
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
               ],
             ),
             SizedBox(
@@ -118,14 +118,28 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 53.sp,
             ),
-          RichText(
-            text:  TextSpan(text: 'Non touchable. ', children: [
-               TextSpan(
-                text: 'Tap here.',
-                recognizer: new TapGestureRecognizer()..onTap = () => print('Tap Here onTap'),
-              )
-            ]),
-          ),
+            RichText(
+              text: TextSpan(
+                  text: 'Don\'t have an account?',
+                  style:  TextStyle(
+                      color: Colors.black, fontSize: 18.sp),
+                  children: <TextSpan>[
+                    TextSpan(text: ' Login',
+                        style: TextStyle(
+                            color: Colors.blueAccent, fontSize: 18.sp),
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context)
+                            {
+
+                              return SignUpScreen();
+                            }
+                            ));
+                          }
+                    )
+                  ]
+              ),
+            ),
            //  Row(
            //
            //    children: [
