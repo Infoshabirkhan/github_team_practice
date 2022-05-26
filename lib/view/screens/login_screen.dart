@@ -105,14 +105,14 @@ class LoginScreen extends StatelessWidget {
 
                     child:Text('Dont have an account ?',style: TextStyle(
                        letterSpacing: 0.18
-                    ),) ),
+           ),) ),
                 Expanded(
 
                     child: TextButtonWidget(text: 'Create an Account', onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)
                       {
 
-                        return const SignUpScreen();
+                        return  SignUpScreen();
                       }
                       ));
                     },))
