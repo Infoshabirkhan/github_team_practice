@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../constants/colors.dart';
-import '../controller/cubit/first_check_box_cubit.dart';
+import '../../controller/cubit/first_check_box_cubit.dart';
 
 class MyCheckBox extends StatelessWidget {
   const MyCheckBox({Key? key}) : super(key: key);
