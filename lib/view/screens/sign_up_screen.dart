@@ -1,14 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:github_team_practice/constants/colors.dart';
 import 'package:github_team_practice/view/screens/login_screen.dart';
 import 'package:github_team_practice/view/widgets/button_widget.dart';
 import 'package:github_team_practice/view/widgets/check_box.dart';
 
-import '../controller/cubit/first_check_box_cubit.dart';
 import '../widgets/text_field_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
