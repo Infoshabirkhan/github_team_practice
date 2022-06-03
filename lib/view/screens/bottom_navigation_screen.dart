@@ -5,7 +5,7 @@ import 'package:github_team_practice/constants/colors.dart';
 import 'package:github_team_practice/controller/cubit/bottom_navigation_cubit.dart';
 import 'package:github_team_practice/view/screens/home_screen.dart';
 import 'package:github_team_practice/view/screens/person_screen.dart';
-import 'package:github_team_practice/view/screens/search_search.dart';
+import 'package:github_team_prace/view/screens/search_search.dart';
 
 class BottomNavigaionScreen extends StatefulWidget {
   const BottomNavigaionScreen({Key? key}) : super(key: key);
